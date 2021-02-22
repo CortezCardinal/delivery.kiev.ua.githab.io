@@ -51,7 +51,7 @@
 	}
 .header__menu-bg-active 
 {
-	 overflow: scroll;
+	 
     position: fixed;
 	/*position: absolute;*/
 	height: 200%;
@@ -109,24 +109,26 @@ transition: 1s linear;
 	}
 	.menu-items
 	{
-		overflow-y: scroll;
+		 
 		display: block;
 		position: absolute;
 		top: -15px;
 		    width: 348px;
 		left: -22px;
+		overflow-y: auto;
 		background-color: #ffffff;
 		visibility: hidden;
 		opacity: 0;
+		bottom: -649px;
 		transition: 0.5s linear;
 	}
 	.menu-items-active
 	{
 		visibility: visible;
 		opacity: 1;
-		overflow:auto;
+	 
 		z-index: 999;
-overflow: auto;
+ 
 	}
 	.menu-items__list-link
 	{
@@ -191,16 +193,20 @@ overflow: auto;
 	}
 	.menu-items__list-links
 	{
+		position: fixed;
+    top: 70px;
+    bottom: 0;
+    overflow: auto;
 		flex-direction: column;
 		width: 320px;
 		align-items: baseline;
-		overflow: auto;
-		overflow-y:scroll;
+	 
+
 	}
 	.menu-items__list
 	{
 		padding: 0;
-		overflow: auto;
+	 
 	}
  
 	.sub-menu__link
