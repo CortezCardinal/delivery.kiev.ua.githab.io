@@ -1094,7 +1094,8 @@ button::-moz-focus-inner {
     position: fixed;
     top: 70px;
     bottom: 0;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
