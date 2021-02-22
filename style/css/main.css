@@ -31,28 +31,28 @@ button::-moz-focus-inner {
   src: url(../fonts/OpenSans-Regular.ttf); }
 @font-face {
   font-family: Roboto-Regular;
-  src: url(../fonts/Roboto-Regular.ttf); }
+  src: url("../fonts/Roboto-Regular.ttf"); }
 @font-face {
   font-family: Roboto-Bold;
-  src: url(../fonts/Roboto-Bold.ttf); }
+  src: url(../fonts/Roboto-Bold.ttf), url("../fonts/roboto/Roboto-Bold.eot") format("eot"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"); }
 /*Inter-Regular 400*/
 @font-face {
   font-family: Inter-Regular;
-  src: url(../fonts/Inter-Regular.ttf); }
+  src: url(../fonts/Inter-Regular.ttf), url("../fonts/inter/Inter-Regular.eot") format("eot"), url("../fonts/Inter-Regular.ttf") format("truetype"), url("../fonts/inter/Inter-Regular.woff") format("woff"), url("../fonts/inter/Inter-Regular.woff2") format("woff2"); }
 /*Inter-Regular 400*/
 /*Inter-Regular 600*/
 @font-face {
   font-family: Inter-SemiBold;
-  src: url(../fonts/Inter-SemiBold.ttf); }
+  src: url(../fonts/Inter-SemiBold.ttf), url("../fonts/inter/Inter-SemiBold.eot") format("eot"), url("../fonts/Inter-SemiBold.ttf") format("truetype"), url("../fonts/inter/Inter-SemiBold.woff") format("woff"), url("../fonts/inter/Inter-SemiBold.woff") format("woff2"); }
 /*Inter-Regular 600*/
 /*Inter-Regular 700*/
 @font-face {
   font-family: Inter-Bold;
-  src: url(../fonts/Inter-Bold.ttf); }
+  src: url(../fonts/Inter-Bold.ttf), url("../fonts/inter/Inter-Bold.eot") format("eot"), url("../fonts/Inter-Bold.ttf") format("truetype"), url("../fonts/inter/Inter-Bold.woff") format("woff"), url("../fonts/inter/Inter-Bold.woff2") format("woff2"); }
 /*Inter-Regular 700*/
 @font-face {
   font-family: Montserrat-Bold;
-  src: url(../fonts/Montserrat-Bold.ttf); }
+  src: url(../fonts/Montserrat-Bold.ttf), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"); }
 .header__body-title,
 .sender-body__title,
 .aplication-body__title,
@@ -430,6 +430,22 @@ button::-moz-focus-inner {
   color: #3C64B1
   /* font-family: Roboto-Bold; */ }
 
+.header__body-img-second {
+  right: 0;
+  width: 530px;
+  height: 430px; }
+
+.header__body-text-list-second,
+.header__body-text-second {
+  width: 540px; }
+
+.header__body-text-second {
+  height: 294px;
+  position: relative;
+  width: 540px;
+  left: 0;
+  bottom: 10px; }
+
 .sender-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -731,6 +747,12 @@ button::-moz-focus-inner {
 .aplication-body__main-button:hover {
   border: 1px solid #3C64B1; }
 
+.aplication__body-items-second {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .associate-body__title {
   font-size: 32px;
   line-height: 40px;
@@ -926,6 +948,16 @@ button::-moz-focus-inner {
   .second-footer-item {
     height: 164px; } }
 @media (max-width: 376px) {
+  .menu-items__list-link,
+  .menu-items__list-link-body {
+    visibility: hidden;
+    opacity: 0; }
+
+  .menu-items__list-link-active,
+  .menu-items__list-link-body-active {
+    visibility: visible;
+    opacity: 1; }
+
   .body-active-menu {
     overflow: hidden; }
 
@@ -1105,7 +1137,8 @@ button::-moz-focus-inner {
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
-            align-items: baseline; }
+            align-items: baseline;
+    visibility: hidden; }
 
   .menu-items__list {
     padding: 0; }
@@ -1130,11 +1163,15 @@ button::-moz-focus-inner {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     position: relative;
     top: 0;
     width: 100%; }
+
+  .sub-menu__items-active {
+    opacity: 1;
+    visibility: visible; }
 
   .menu-burger-cross {
     display: -webkit-box;
@@ -1553,7 +1590,13 @@ button::-moz-focus-inner {
   .active-circle-circle {
     border: 1.5px solid #000;
     cursor: pointer;
-    color: #000; } }
+    color: #000; }
+
+  .aplication__body-img-second-mob {
+    padding-bottom: 17px; }
+
+  .sender-body__description-second {
+    padding-top: 56px; } }
 @media (max-width: 340px) {
   #sliderLeft {
     -webkit-transform: rotate(180deg);

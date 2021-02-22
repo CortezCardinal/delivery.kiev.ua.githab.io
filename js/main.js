@@ -41,12 +41,18 @@ $(".sender-body__info-title").toggleClass("active-circle");
   $(".header__menu-bg").addClass("header__menu-bg-active");
  $(".menu-items").addClass("menu-items-active");
  $("body").addClass("body-active-menu");
+  $(".menu-items__list-link").addClass("menu-items__list-link-active");
+  $(".sub-menu__items").addClass("sub-menu__items-active");
+  $(".menu-items__list-link-body").addClass("menu-items__list-link-body-active");
  
  });
    $(".menu-burger-cross").click(function( event ) {
   $(".header__menu-bg").removeClass("header__menu-bg-active");
  $(".menu-items").removeClass("menu-items-active");
  $("body").removeClass("body-active-menu");
+  $(".menu-items__list-link").removeClass("menu-items__list-link-active");
+  $(".sub-menu__items-link").addClass("sub-menu__items-active");
+  $(".menu-items__list-link-body").addClass("menu-items__list-link-body-active");
  });
 });
  
