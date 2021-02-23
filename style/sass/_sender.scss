@@ -199,6 +199,7 @@ width: 32px;
   
 }
 .input[type="checkbox"]:before {
+  overflow: hidden;
   position: relative;
   display: block;
   width: 12px;

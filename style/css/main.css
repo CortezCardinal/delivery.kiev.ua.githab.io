@@ -688,6 +688,7 @@ button::-moz-focus-inner {
   height: 12px; }
 
 .input[type="checkbox"]:before {
+  overflow: hidden;
   position: relative;
   display: block;
   width: 12px;
@@ -1180,7 +1181,7 @@ button::-moz-focus-inner {
     padding: 10px 0 10px 20px; }
 
   .menu-items__list-link {
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
     padding: 10px 0 10px 11px;
     background-color: #ffffff; }
