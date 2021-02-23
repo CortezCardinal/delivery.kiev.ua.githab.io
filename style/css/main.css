@@ -635,8 +635,8 @@ button::-moz-focus-inner {
 .send-body-form2 {
   overflow: hidden;
   height: 0;
-  -webkit-transition: height 2s;
-          transition: height 2s; }
+  -webkit-transition: height 0.3s;
+          transition: height 0.3s; }
 
 .send-body-form2-active {
   height: 600px; }
