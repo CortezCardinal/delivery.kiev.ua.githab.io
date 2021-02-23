@@ -38,6 +38,7 @@ $(".sender-body__info-title").toggleClass("active-circle");
  $(".send-body-form2").toggleClass("send-body-form2-active");
 });
    $(".burger-menu").click(function( event ) {
+   $(".burger-menu").addClass("burger-menu-active");
   $(".header__menu-bg").addClass("header__menu-bg-active");
  $(".menu-items").addClass("menu-items-active");
  $("body").addClass("body-active-menu");
@@ -47,9 +48,10 @@ $(".sender-body__info-title").toggleClass("active-circle");
  
  });
    $(".menu-burger-cross").click(function( event ) {
+$(".burger-menu").removeClass("burger-menu-active");
   $(".header__menu-bg").removeClass("header__menu-bg-active");
- $(".menu-items").removeClass("menu-items-active");
- $("body").removeClass("body-active-menu");
+  $(".menu-items").removeClass("menu-items-active");
+  $("body").removeClass("body-active-menu");
   $(".menu-items__list-link").removeClass("menu-items__list-link-active");
   $(".sub-menu__items-link").removeClass("sub-menu__items-active");
   $(".sub-menu__items").removeClass("sub-menu__items-active");
