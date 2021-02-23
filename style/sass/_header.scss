@@ -19,12 +19,25 @@
  }
  .menu-items__list-link, 
  .menu-items__list-button, 
- .menu-items__list-number
+ .menu-items__list-number,
+ .header__body-title-subtitle
  {
  	font-size: 14px;
  	line-height: 18px;
  }
- .menu-items__list-number,.header__body-title-subtitle
+ .header__body-title-subtitle
+ {
+ 	font-size: 15px;
+ }
+ .main-button, 
+ .second-button
+ {
+ 	font-size: 13px;
+ }
+ .menu-items__list-number,
+ .header__body-title-subtitle,
+ .main-button, 
+ .second-button
  {
  	font-family: Montserrat-Bold;
  }
@@ -119,10 +132,10 @@ border-bottom: 1px solid rgba(60, 100, 177, 0.1);
 }
 .header__body-img
 {
-	position: relative;
+position: relative;
     height: 511px;
     right: -63px;
-    width: 738px;
+    width: 820px;
 }
 .header__body-items img,.header__body-text
 {
@@ -135,10 +148,10 @@ border-bottom: 1px solid rgba(60, 100, 177, 0.1);
 }
 .header__body-text
 {
-	height: 294px;
+	    height: 294px;
     position: relative;
-    width: 437px;
-    left: -44px;
+    width: 445px;
+    left: -57px;
     bottom: 10px;
 }
 .header__body-title
@@ -148,15 +161,12 @@ border-bottom: 1px solid rgba(60, 100, 177, 0.1);
 	font-size: 36px;
 	line-height: 42px;
 	letter-spacing: 0.1px;
-	padding-bottom: 40px;
+	padding-bottom: 35px;
  
 }
 .header__body-descrittion
 {
-	font-size: 16px;
-	line-height: 22px;
-	letter-spacing: 0.6px;
-	font-family: Roboto-Regular;
+ 
 	padding-bottom: 25px;
 }
 .header__body-text-list

@@ -87,7 +87,8 @@ button::-moz-focus-inner {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  cursor: pointer; }
 
 .logo__title {
   font-family: Roboto-Bold;
@@ -221,6 +222,13 @@ button::-moz-focus-inner {
 .sender-body__form-title {
   color: #060303; }
 
+.header__body-descrittion,
+.aplication-body__description {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  font-family: Inter-Regular; }
+
 .header__menu-items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -247,11 +255,22 @@ button::-moz-focus-inner {
 
 .menu-items__list-link,
 .menu-items__list-button,
-.menu-items__list-number {
+.menu-items__list-number,
+.header__body-title-subtitle {
   font-size: 14px;
   line-height: 18px; }
 
-.menu-items__list-number, .header__body-title-subtitle {
+.header__body-title-subtitle {
+  font-size: 15px; }
+
+.main-button,
+.second-button {
+  font-size: 13px; }
+
+.menu-items__list-number,
+.header__body-title-subtitle,
+.main-button,
+.second-button {
   font-family: Montserrat-Bold; }
 
 .menu-items__list-button {
@@ -354,7 +373,7 @@ button::-moz-focus-inner {
   position: relative;
   height: 511px;
   right: -63px;
-  width: 738px; }
+  width: 820px; }
 
 .header__body-items img, .header__body-text {
   /*	width: 445px;*/ }
@@ -366,8 +385,8 @@ button::-moz-focus-inner {
 .header__body-text {
   height: 294px;
   position: relative;
-  width: 437px;
-  left: -44px;
+  width: 445px;
+  left: -57px;
   bottom: 10px; }
 
 .header__body-title {
@@ -376,13 +395,9 @@ button::-moz-focus-inner {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1px;
-  padding-bottom: 40px; }
+  padding-bottom: 35px; }
 
 .header__body-descrittion {
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.6px;
-  font-family: Roboto-Regular;
   padding-bottom: 25px; }
 
 .header__body-text-list {
@@ -599,14 +614,16 @@ button::-moz-focus-inner {
 .sender-body__form2 {
   margin-bottom: 62px; }
 
-.send-body-form2__body {
-  -webkit-transition: max-height 0.3s;
-          transition: max-height 0.3s; }
-
-.sender-body__form2 {
-  -webkit-transition: max-height 0.3s;
-          transition: max-height 0.3s; }
-
+/*.send-body-form2__body
+{
+ 
+	transition: max-height 0.3s;
+}
+.sender-body__form2 
+{
+ 
+	transition: max-height 0.3s;  
+}*/
 .active-circle-circle {
   border: 1.5px solid #000;
   cursor: pointer;
@@ -618,8 +635,8 @@ button::-moz-focus-inner {
 .send-body-form2 {
   overflow: hidden;
   height: 0;
-  -webkit-transition: all 1s;
-          transition: all 1s; }
+  -webkit-transition: height 2s;
+          transition: height 2s; }
 
 .send-body-form2-active {
   height: 600px; }
@@ -725,7 +742,7 @@ button::-moz-focus-inner {
 
 .aplication-body__list {
   width: 540px;
-  height: 333.5px; }
+  height: 354.5px; }
 
 .aplication-body__title {
   font-size: 32px;
@@ -752,6 +769,19 @@ button::-moz-focus-inner {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.aplication__body-img-second {
+  height: 429px;
+  width: 540px; }
+
+.aplication-body__list-second {
+  height: 251px; }
+
+.aplication-body__description-second {
+  padding-bottom: 33px; }
+
+.aplication-body__description-point-second {
+  padding: 45px 0 0 0; }
 
 .associate-body__title {
   font-size: 32px;
@@ -1038,6 +1068,7 @@ button::-moz-focus-inner {
             transition: 0.5s linear; }
 
   .menu-items-active {
+    height: 100vh;
     visibility: visible;
     opacity: 1;
     z-index: 999; }
@@ -1261,8 +1292,9 @@ button::-moz-focus-inner {
 
   .header__body-img-mob {
     display: block;
-    width: 274px;
-    height: 177px; }
+    width: 295px;
+    height: 177px;
+    padding-bottom: 17px; }
 
   .aplication-body__img-mob {
     width: 295px;
@@ -1329,7 +1361,7 @@ button::-moz-focus-inner {
     margin: 0 auto; }
 
   .header__body-descrittion {
-    padding-bottom: 32px; }
+    padding-bottom: 24px; }
 
   .header__body-title {
     padding-bottom: 13px; }
@@ -1374,7 +1406,7 @@ button::-moz-focus-inner {
     letter-spacing: 0.1px; }
 
   .header__body-title-subtitle {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.4px; }
 
