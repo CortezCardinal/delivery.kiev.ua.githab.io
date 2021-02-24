@@ -1220,6 +1220,7 @@ button::-moz-focus-inner {
     height: 72px; }
 
   .menu-items {
+    -webkit-overflow-scrolling: touch;
     display: block;
     position: fixed;
     top: -1px;
