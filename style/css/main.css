@@ -726,17 +726,59 @@ button::-moz-focus-inner {
   top: -10px; }
 
 .input[type="checkbox"]:checked:after {
+  /* position: relative;
+    display: block;
+    width: 10px;
+    height: 8px;
+    content: "";
+    right: -1px;
+    top: -11px;
+    background: url(../../img/check.svg);*/ }
+
+.sender-form__label-check {
   position: relative;
+  z-index: 99px; }
+
+.sender-form__label-check:before {
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #E6E6E6;
+  content: "";
+  background: #FFF;
+  box-sizing: border-box;
+  top: 2px;
+  left: -34px;
+  z-index: 99px; }
+
+.sender-form__label-check:after {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 8px;
+  content: "";
+  top: 5px;
+  left: -33px;
+  z-index: 99px; }
+
+.input[type="checkbox"]:checked + .sender-form__label-check:after {
+  position: absolute;
   display: block;
   width: 10px;
   height: 8px;
   content: "";
   right: -1px;
-  top: -11px;
+  top: 4px;
+  z-index: 99px;
   background: url(../../img/check.svg); }
 
 .login-body__form {
   height: auto; }
+
+.checkbox {
+  opacity: 0; }
 
 .application {
   background-color: #F3F6FA; }
