@@ -148,7 +148,7 @@ button::-moz-focus-inner
  }
  .second-button, .second-button:hover
  {
-  padding: $button-padding;
+  /*padding: $button-padding;*/
   border:$second-button-border;
   color: $main-color-logo-and-subtitle;
  background-color: transparent;

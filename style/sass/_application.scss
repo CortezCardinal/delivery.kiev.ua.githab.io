@@ -40,8 +40,10 @@ letter-spacing: 0.1px;
 }
 .aplication-body__main-button
 {
+	padding: 0;
+	height: 42px;
 	margin-right: 24px;
-	height: 100%;
+	/*height: 100%;*/
 	border: 1px solid #3C64B1;
 }
 .aplication-body__main-button:hover
@@ -69,4 +71,37 @@ letter-spacing: 0.1px;
 {
 	padding: 45px 0 0 0;
  
+}
+.aplication-body__main-button:hover .header__second-button-link
+{
+	color: #ffffff;
+}
+.header__second-button-link-second
+{
+	color: white;
+}
+.p-otstup
+{
+	padding-bottom: 31px;
+}
+.p-otstup:nth-child(1)
+{
+	padding-top: 31px;
+}
+.aplication-body-second
+{
+	padding: 121px 0;
+}
+.aplication-body__list-second
+{
+	height: 100%;
+}
+.aplication__body-img-second
+{
+	width: auto;
+	height: 100%;
+}
+.aplication__body-img-second-dostawka
+{
+	width: 500px;
 }

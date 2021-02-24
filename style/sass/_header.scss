@@ -219,4 +219,16 @@ position: relative;
     left:0;
     bottom: 10px;
 }
- 
+.header__second-button-link
+{
+        color: #3C64B1;
+            padding: 12px 24px;
+}
+.header__second-button-link:hover
+{
+color: #ffffff;
+}
+.header__second-button:hover .header__second-button-link
+{
+    color: #ffffff;
+}
