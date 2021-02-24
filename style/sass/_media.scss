@@ -4,6 +4,30 @@
   	display: none;
   }
 }
+@media screen and (min-width: 500px) {
+	.sub-menu__items
+{
+   visibility: hidden;
+  opacity: 0; 
+  
+  visibility: visible; 
+  transition: 0.4s linear;
+}
+.menu-items__list-link-body:hover 
+.list-link__sub-menu .sub-menu__items
+{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s linear;
+}
+ 
+.sub-menu__items:hover
+{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s linear;
+}
+}
 @media screen and (max-width: 900px) {
   body
   {
@@ -11,6 +35,7 @@
   }
 }
 @media  (min-width: 500px) {
+
 .burger-menu
 {
 	display: none;
@@ -37,7 +62,10 @@
 
 /*@media  (max-width: 376px) {*/
 	@media  (max-width: 500px) {
-
+.header__menu-bg
+	{
+		width: 100%;
+	}
 		.burger-menu-active
 		{
 			opacity: 0;
@@ -54,16 +82,16 @@
 	.menu-items__list-link,
 	.menu-items__list-link-body
 	{
-		visibility: hidden;
+		/*visibility:visible;
 
-		opacity: 0;
+		opacity: 1;*/
 	}
-	.menu-items__list-link-active,
+	/*.menu-items__list-link-active,
 	.menu-items__list-link-body-active
 	{
 visibility:visible;
 		opacity: 1;
-	}
+	}*/
 	.body-active-menu
 	{
 		overflow: hidden;
@@ -75,7 +103,7 @@ visibility:visible;
 	.header__menu-bg,
 	.header__menu-bg-active
 	{
-		transition: 1s linear;
+		/*transition: 0.3s linear;*/
 	}
 .header__menu-bg-active 
 {
@@ -84,7 +112,7 @@ visibility:visible;
 	/*position: absolute;*/
 	height: 200%;
 	width:100%;
-transition: 1s linear;
+/*transition: 0.3s linear;*/
 	z-index:99;
 	background-color: #00000099;
 }
@@ -141,14 +169,14 @@ transition: 1s linear;
 		display: block;
 		position: fixed;
 		top: -1px;
-		    width: 348px;
+		    width: 90%;
 		left: -1px;
 		overflow-y: auto;
 		background-color: #ffffff;
 		visibility: hidden;
 		opacity: 0;
 		bottom: -649px;
-		transition: 0.5s linear;
+		transition: 0.3s linear;
 	}
 	.menu-items-active
 	{
@@ -234,12 +262,26 @@ justify-content: initial;
 	flex-direction: column;
 	width: 90%;
 	align-items: baseline;
-	 visibility: hidden;
-
+/* opacity: 0;
+	 visibility: hidden;*/
 	}
+	/*.menu-items__list-links-active
+	{
+		 opacity: 1;
+ visibility: visible;
+	}*/
 	.menu-items__list
 	{
 		padding: 0;
+		visibility: hidden;
+		opacity: 0;	
+	 
+	}
+	.menu-items__list-active
+	{
+		padding: 0;
+		visibility: visible;
+		opacity: 1;	
 	 
 	}
  
@@ -269,17 +311,17 @@ justify-content: initial;
 	{
 		padding: 0;
 	 display: flex;
-		opacity: 0;
-		visibility: hidden;
+		/*opacity:1;
+		visibility: visible;*/
 		position: relative;
 		top: 0;
 		width: 100%;
 	}
-	.sub-menu__items-active
+	/*.sub-menu__items-active
 	{
 			opacity:1;
 		visibility:visible;
-	}
+	}*/
 	 
  
 	.menu-burger-cross

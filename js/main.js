@@ -60,9 +60,10 @@ $(".sender-body__info-title").toggleClass("active-circle");
   $(".header__menu-bg").addClass("header__menu-bg-active");
  $(".menu-items").addClass("menu-items-active");
  $("body").addClass("body-active-menu");
-  $(".menu-items__list-link").addClass("menu-items__list-link-active");
-  $(".sub-menu__items").addClass("sub-menu__items-active");
-  $(".menu-items__list-link-body").addClass("menu-items__list-link-body-active");
+ $(".menu-items__list").addClass("menu-items__list-active");
+  /*$(".menu-items__list-link").addClass("menu-items__list-link-active");*/
+  /*$(".sub-menu__items").addClass("sub-menu__items-active");*/
+  /*$(".menu-items__list-link-body").addClass("menu-items__list-link-body-active");*/
  
  });
    $(".menu-burger-cross").click(function( event ) {
@@ -70,10 +71,11 @@ $(".sender-body__info-title").toggleClass("active-circle");
   $(".header__menu-bg").removeClass("header__menu-bg-active");
   $(".menu-items").removeClass("menu-items-active");
   $("body").removeClass("body-active-menu");
-  $(".menu-items__list-link").removeClass("menu-items__list-link-active");
+   $(".menu-items__list").removeClass("menu-items__list-active");
+  /*$(".menu-items__list-link").removeClass("menu-items__list-link-active");*/
   $(".sub-menu__items-link").removeClass("sub-menu__items-active");
-  $(".sub-menu__items").removeClass("sub-menu__items-active");
-  $(".menu-items__list-link-body").removeClass("menu-items__list-link-body-active");
+ /* $(".sub-menu__items").removeClass("sub-menu__items-active");*/
+ /* $(".menu-items__list-link-body").removeClass("menu-items__list-link-body-active");*/
  });
 });
  

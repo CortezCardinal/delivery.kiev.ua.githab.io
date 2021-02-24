@@ -53,7 +53,8 @@ button::-moz-focus-inner
   font-family: Roboto-Bold;
   src: url(../fonts/Roboto-Bold.ttf),
   url("../fonts/roboto/Roboto-Bold.eot") format("eot"),
-  url("../fonts/Roboto-Bold.ttf") format("truetype"), 
+  url("../fonts/Roboto-Bold.ttf") format("truetype"),
+   url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"),
   url("../fonts/roboto/Roboto-Bold.woff") format("woff"); 
 }
  
@@ -241,8 +242,8 @@ button::-moz-focus-inner
 }*/
 .sub-menu__items
 {
-  visibility: hidden;
-  opacity: 0;
+ /* visibility: hidden;
+  opacity: 0;*/
  /* opacity: 1;
   visibility: visible;*/
   transition: 0.4s linear;
@@ -252,7 +253,7 @@ button::-moz-focus-inner
     transition: 0.4s linear;
 }
 
-.menu-items__list-link-body:hover .list-link__sub-menu .sub-menu__items
+/*.menu-items__list-link-body:hover .list-link__sub-menu .sub-menu__items
 {
   visibility: visible;
   opacity: 1;
@@ -263,7 +264,7 @@ button::-moz-focus-inner
   visibility: visible;
   opacity: 1;
   transition: 0.4s linear;
-}
+}*/
 .header__body-title,
 .associate-body__title,
 .aplication-body__title,
