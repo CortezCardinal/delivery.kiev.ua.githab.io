@@ -463,7 +463,7 @@ button::-moz-focus-inner {
 
 .header__second-button-link {
   color: #3C64B1;
-  padding: 12px 24px; }
+  padding: 12px 20px; }
 
 .header__second-button-link:hover {
   color: #ffffff; }
@@ -1767,5 +1767,4 @@ button::-moz-focus-inner {
   #sliderRight {
     position: relative;
     left: -9px; } }
-
 /*# sourceMappingURL=main.css.map */
