@@ -105,3 +105,28 @@ letter-spacing: 0.1px;
 {
 	width: 500px;
 }
+.aplication-body__buttons
+{
+	display: flex;
+    align-items: center;
+}
+.aplication-body__second-button
+{
+	display: inline-block;
+}
+.aplication-body__second-button
+{
+	align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.cabinet-href
+{
+	color: #3C64B1;
+	padding: 12px 19px;
+}
+.kabinet-button:hover .cabinet-href
+{
+	color:white;
+}

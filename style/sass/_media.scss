@@ -79,6 +79,11 @@
 	{
 		padding-bottom: 24px;
 	}
+	.menu-items__list-link
+	{
+		position: relative;
+		z-index: 4;
+	}
 	.menu-items__list-link,
 	.menu-items__list-link-body
 	{
@@ -295,7 +300,8 @@ justify-content: initial;
 
 	.menu-items__list-link
 	{
-		/*height: 100%;*/
+		position: relative;
+		z-index: 4;
 		    height: 38.6px;
 		    width: 100%;
 		    padding: 10px 0 10px 11px;
