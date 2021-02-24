@@ -1236,7 +1236,7 @@ button::-moz-focus-inner {
 
   .menu-items-active {
     width: 90%;
-    height: 709px;
+    height: 100%;
     visibility: visible;
     opacity: 1;
     z-index: 999; }
@@ -1328,6 +1328,7 @@ button::-moz-focus-inner {
             justify-content: initial; }
 
   .menu-items__list-links {
+    height: 100%;
     position: fixed;
     top: 70px;
     bottom: 0;
