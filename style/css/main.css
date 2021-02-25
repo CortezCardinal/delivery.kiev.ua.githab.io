@@ -909,9 +909,6 @@ button::-moz-focus-inner {
 .kabinet-button:hover .cabinet-href {
   color: white; }
 
-.aplication-body__title-second {
-  padding-bottom: 10px; }
-
 .associate-body__title {
   font-size: 32px;
   line-height: 40px;
@@ -1131,6 +1128,9 @@ button::-moz-focus-inner {
     height: 164px; } }
 /*@media  (max-width: 376px) {*/
 @media (max-width: 500px) {
+  .aplication-body__title-second {
+    padding-bottom: 10px; }
+
   .header__menu-bg {
     width: 100%; }
 
@@ -1853,4 +1853,5 @@ button::-moz-focus-inner {
   #sliderRight {
     position: relative;
     left: -9px; } }
+
 /*# sourceMappingURL=main.css.map */
