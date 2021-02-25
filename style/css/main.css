@@ -919,6 +919,9 @@ button::-moz-focus-inner {
   font-family: Inter-SemiBold;
   padding-bottom: 0px; }
 
+.tel-vak-link {
+  color: #737B7D; }
+
 .kontati {
   padding-bottom: 26px; }
 
