@@ -19,10 +19,13 @@
 					<img src="../img/logo.svg" alt="logo" class="logo__img">
 					<h1 class="logo__title">Кур’єр Сервіс</h1>
 				</a>
-				<div class="burger-menu">
-					<span class="span1"></span>
-					<span class="span2"></span>
-					<span class="span3"></span>
+			<div class="menu-body-mob">
+					<a class="menu-body-mob__login-link" href="kabinet.html"> <img class="menu-body-mob__login-img" src="../img/login-mob.svg" alt="login"></a>
+					<div class="burger-menu">
+						<span class="span1"></span>
+						<span class="span2"></span>
+						<span class="span3"></span>
+					</div>
 				</div>
 				<div class="menu-items"> 
 				<div class="menu-burger-cross">
@@ -125,20 +128,20 @@
 <article id="sender" class="sender container">
 	<section class="section">
 	<div class="sender-body">
-		<div class="sender-body__description sender-body__description-second">
+		<div class="sender-body__description  sender-body__description-second">
 			<h2 class="sender-body__title">
 			  Відправляйте посилки зручно: з дому, офісу чи будь-якого іншого місця! 
 			</h2>
 			<div class="sender-body__items">
 				<div class="sender-body__item">
-					<img src="../img/form.svg" class="sender-body__item-img"alt="senderForm">
+					<img src="../../img/form.svg" class="sender-body__item-img"alt="senderForm">
 					<div class="sender-body__item-text">
-					Уважно заповніть форму <b>“виклику кур’єра”</b> праворуч. Наш менеджер зателефонує Вам
+						Уважно заповніть форму <b>“виклику кур’єра”</b> праворуч. Наш менеджер зателефонує Вам
 					</div>
 					  	
 				</div>
 				<div class="sender-body__item">
-					<img src="../img/clock.svg" class="sender-body__item-img"alt="senderClock">
+					<img src="../../img/clock.svg" class="sender-body__item-img"alt="senderClock">
 					<div class="sender-body__item-text">
 						Підтвердіть будь ласка Ваше замовлення по телефону та <b>очікуйте кур’єра</b>
 					</div>
@@ -176,7 +179,7 @@
 			          	</div>  
 					</div>
 				</div>
-            </form>
+           
             <div class="sender-body__info">
             	<div class="sender-body__info-circle">
             		+
@@ -194,40 +197,40 @@
 			<h3 class="sender-body__form-title">
 				Отримувач
 			</h3>
-			<form id="sender-form"  class="sender-form" method="POST">
+			 
 				<div class="form-body"> 					 
 			    	<div class="form-item">
 				        <div class="form-group">
-					        <label class="sender-form__label"   for="name2">Призвіще та Ім'я</label>
-					        <input id="name2" placeholder="Іванов Іван Іванович" class="input input-name" name="name" type="text" required>
+					        <label class="sender-form__label label-sec"   for="name2">Призвіще та Ім'я</label>
+					        <input id="name2" placeholder="Іванов Іван Іванович" class="input input-name" name="name2" type="text" required>
 			          	</div>  
 					</div>
 					<div class="form-item"> 
 				          <div class="form-group">
 				            <label class="sender-form__label"for="address2">Адреса :</label>
-				            <input id="address2" placeholder="Хрещатик 4г" class="input input-address" name="address" type="text" required>
+				            <input id="address2" placeholder="Хрещатик 4г" class="input input-address" name="address2" type="text" required>
 			          	</div>
 					</div>
 					<div class="form-item"> 
 				          <div class="form-group">
 				            <label class="sender-form__label"for="tel2">Телефон :</label>
-				            <input id="tel2" placeholder="+38 063 155-25-35" class="input input-phone" name="tel" type="tel" required>
+				            <input id="tel2" placeholder="+38 063 155-25-35" class="input input-phone" name="tel2" type="tel" required>
 			          	</div>
 					</div>
 					<div class="form-item">
 				        <div class="form-group">
 					        <label class="sender-form__label"for="comment2">Коментар до замовлення</label>
-					        <input id="comment2" placeholder="Буду чекати біля 4 підїзду..." class="input input-comment" name="comment" type="text" required>
+					        <input id="comment2" placeholder="Буду чекати біля 4 підїзду..." class="input input-comment" name="comment2" type="text" required>
 			          	</div>  
 					</div>
 					<div class="form-item form-item-check">
 				        <div class="form-group form-group-check">
-					        <input id="check" placeholder="Буду чекати біля 4 підїзду..." class="input input-comment checkbox" name="comment" type="checkbox" required><label class="sender-form__label sender-form__label-check"for="check">Зателефонувати мені</label>
+					        <input id="check" placeholder="Буду чекати біля 4 підїзду..." class="input input-comment checkbox" name="check" type="checkbox" required><label class="sender-form__label sender-form__label-check"for="check">Зателефонувати мені</label>
 			          	</div>  
 					</div>
 					<div class="form-item form-item-check">
 				        <div class="form-group  ">
-					      <button class="aplication-body__main-button main-button btn-form2">Виклик кур'єра</button>
+					      <button form="sender-form" class="aplication-body__main-button main-button btn-form2">Виклик кур'єра</button>
 			          	</div>  
 					</div>
 				</div>

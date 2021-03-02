@@ -780,6 +780,9 @@ button::-moz-focus-inner {
 .checkbox {
   opacity: 0; }
 
+.label-sec {
+  padding-top: 10px; }
+
 .application {
   background-color: #F3F6FA; }
 
@@ -1134,6 +1137,9 @@ button::-moz-focus-inner {
   .burger-menu {
     display: none; }
 
+  .menu-body-mob__login-link {
+    display: none; }
+
   .header__body-img-mob {
     display: none; }
 
@@ -1144,6 +1150,31 @@ button::-moz-focus-inner {
     height: 164px; } }
 /*@media  (max-width: 376px) {*/
 @media (max-width: 500px) {
+  .menu-body-mob {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 65px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .menu-body-mob__login-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
   .aplication-body__title-second {
     padding-bottom: 10px; }
 

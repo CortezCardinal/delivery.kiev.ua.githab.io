@@ -40,7 +40,10 @@
 {
 	display: none;
 }
-
+.menu-body-mob__login-link
+{
+	display: none;
+}
 .header__body-img-mob
 	{
 		display: none;
@@ -61,11 +64,25 @@
 }
 
 /*@media  (max-width: 376px) {*/
-	@media  (max-width: 500px) {
-		.aplication-body__title-second
+@media  (max-width: 500px) 
 {
-	padding-bottom: 10px;
-}
+
+	.menu-body-mob
+	{
+		justify-content: space-between;
+		width: 65px;
+		display: flex;
+    align-items: center;
+	}
+	.menu-body-mob__login-link
+	{
+		display: flex;
+		align-items: center;
+	}
+	.aplication-body__title-second
+	{
+		padding-bottom: 10px;
+	}
 .header__menu-bg
 	{
 		width: 100%;
